@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monopoly GO · Relaunch Plan</title>
+<style>
+  :root{
+    --red:#E4141B; --ink:#20242B; --muted:#6B7280; --line:#ECE7DA;
+    --paper:#FFFFFF; --cream:#FAF7F0;
+    --go:#0E9E52; --wip:#E39A17; --stop:#E4141B;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; color:var(--ink); background:var(--cream);
+    font-family:"Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.5; padding:40px 18px 70px; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px; margin:0 auto;}
+
+  /* subtle monopoly background motif */
+  body:before{
+    content:"🎲"; position:fixed; right:-30px; bottom:-40px; font-size:340px;
+    opacity:.035; transform:rotate(-15deg); pointer-events:none; z-index:0;
+  }
+  .wrap{position:relative; z-index:1;}
+
+  header{margin-bottom:26px;}
+  .tag{
+    display:inline-block; background:var(--red); color:#fff; font-weight:800;
+    letter-spacing:.12em; font-size:11px; text-transform:uppercase;
+    padding:5px 12px; border-radius:6px;
+  }
+  h1{font-size:clamp(26px,5vw,36px); margin:14px 0 4px; letter-spacing:-.01em;}
+  .sub{color:var(--muted); font-size:15px; margin:0;}
+
+  .goal{
+    background:var(--ink); color:#fff; border-radius:14px; padding:18px 22px; margin:22px 0 30px;
+    display:flex; flex-wrap:wrap; gap:22px 34px; align-items:baseline;
+  }
+  .goal .big{font-size:26px; font-weight:800;}
+  .goal .lab{display:block; font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:#A6ADBB; margin-bottom:2px;}
+  .goal .green{color:#54e08c;}
+
+  h2{font-size:13px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin:30px 0 12px; display:flex; align-items:center; gap:8px;}
+  h2 .ic{font-size:16px;}
+
+  .row{display:flex; gap:12px; padding:12px 0; border-top:1px solid var(--line); align-items:flex-start;}
+  .row:first-of-type{border-top:none;}
+  .dot{flex:none; width:9px; height:9px; border-radius:50%; margin-top:7px;}
+  .d-go{background:var(--go);} .d-wip{background:var(--wip);} .d-stop{background:var(--stop);}
+  .row .t{flex:1;}
+  .row .t b{font-weight:700;}
+  .row .s{flex:none; font-size:12px; font-weight:700; color:var(--muted); padding-top:1px; white-space:nowrap;}
+
+  .mini{padding-left:2px;}
+  .mini .row{padding:8px 0;}
+  .mini .name{flex:1; font-size:14.5px;}
+  .mini .st{flex:none; font-size:12px; font-weight:700;}
+  .c-go{color:var(--go);} .c-wip{color:var(--wip);} .c-stop{color:var(--stop);}
+
+  .flag{
+    background:var(--paper); border:1px solid var(--line); border-left:4px solid var(--red);
+    border-radius:0 12px 12px 0; padding:16px 20px; margin:6px 0 0;
+  }
+  .flag h3{margin:0 0 6px; font-size:16.5px;}
+  .flag p{margin:0 0 8px; font-size:14.5px; color:#3d434d;}
+  .flag p:last-child{margin-bottom:0;}
+  .flag .call{color:var(--red); font-weight:700;}
+
+  ul{margin:0; padding:0; list-style:none;}
+  ul li{padding:7px 0 7px 20px; position:relative; font-size:14.5px;}
+  ul li:before{content:""; position:absolute; left:2px; top:14px; width:7px; height:7px; background:var(--red); border-radius:2px; transform:rotate(45deg);}
+  ul li b{font-weight:700;}
+
+  footer{margin-top:34px; padding-top:14px; border-top:1px solid var(--line); color:var(--muted); font-size:12px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <span class="tag">Monopoly GO</span>
+    <h1>Unity Ads Relaunch Plan</h1>
+    <p class="sub">Read before the relaunch brainstorm · Thursday, August 20 · target relaunch early September</p>
+  </header>
+
+  <div class="goal">
+    <div><span class="lab">Goal (their KPI)</span><span class="big green">5% D7 tROAS</span></div>
+    <div><span class="lab">On US</span><span class="big">2.5 to 3%</span></div>
+    <div><span class="lab">Hold on evergreen</span><span class="big green">$5K a day</span></div>
+    <div><span class="lab">Where we are now</span><span class="big">1 to 3%</span></div>
+  </div>
+
+  <h2><span class="ic">🎩</span> Three things gate the relaunch</h2>
+  <div class="rows">
+    <div class="row"><span class="dot d-wip"></span><div class="t"><b>iOS COPPA fix.</b> Consent flags were sent as text not true or false, so all iOS traffic read as fully restricted. Fast fix confirmed, full SDK fix lands end of August.</div><span class="s">End of Aug</span></div>
+    <div class="row"><span class="dot d-wip"></span><div class="t"><b>Three high interaction playables.</b> Their number one ask, 10 to 15 taps each, all evergreen. Creative is the lever they're betting on.</div><span class="s">In progress</span></div>
+    <div class="row"><span class="dot d-stop"></span><div class="t"><b>Reset iOS learnings, or keep them.</b> The call we owe them. More below.</div><span class="s">Decide Thu</span></div>
+  </div>
+
+  <h2><span class="ic">🎯</span> The three playables</h2>
+  <div class="mini">
+    <div class="row"><span class="name">1. Racers</span><span class="st c-go">Done, in licensor review</span></div>
+    <div class="row"><span class="name">2. Shutdown concept, 3 variants</span><span class="st c-wip">In progress in Wrike</span></div>
+    <div class="row"><span class="name">3. Third slot, claw machine or new</span><span class="st c-stop">Open, need to pick</span></div>
+  </div>
+
+  <h2><span class="ic">🎲</span> The big question for the room</h2>
+  <div class="flag">
+    <h3>iOS is out of learning after 90 plus days. Is that actually good for us?</h3>
+    <p>iOS has been dark since May, so the learnings have faded. Normally that hurts. But those learnings were built while COPPA was broken and iOS was wrongly flagged as restricted, so the old signal is polluted, not valuable.</p>
+    <p>A clean start on fixed signal might be a better place to begin than dragging that corrupted history forward. The trade is we re enter the learning phase and need budget and strong creative to exit it fast, especially since they want to launch D28 right away.</p>
+    <p class="call">The call: reset to scratch, or keep. I lean reset, but I want the PfM view.</p>
+  </div>
+
+  <h2><span class="ic">📋</span> Also to decide</h2>
+  <ul>
+    <li><b>Third playable.</b> Iterate a claw machine from the 19 never tested STORM playables, or greenlight a new concept.</li>
+    <li><b>Creative consultation.</b> Scopely offered a session plus coordination with their studio Flame in Japan. Worth a yes.</li>
+    <li><b>GA and Firebase linking.</b> What benchmarks get us past their monetization team's question of why not through the MMP.</li>
+    <li><b>Firm relaunch date.</b> COPPA lands end of August, so do we commit to early September and what is the smallest creative set we launch with.</li>
+  </ul>
+
+  <footer>Sources: Scopely "Unity Relaunch, Sep 2026" tracker, internal relaunch channel, client channel, August 2 client call · August 2026, Alon Haliva</footer>
+
+</div>
+</body>
+</html>
